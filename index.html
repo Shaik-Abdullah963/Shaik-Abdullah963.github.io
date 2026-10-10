@@ -333,6 +333,9 @@
         padding: 20px
       }
     }
+  
+    .job .meta{font:12px 'JetBrains Mono',monospace;color:var(--muted);margin-bottom:6px}
+    .edu p{color:var(--ink)}
   </style>
 </head>
 
@@ -342,75 +345,28 @@
     <div class="wrap">
       <a class="name" href="#">Abdullah S</a>
       <ul>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </div>
   </nav>
 
   <header class="wrap">
-    <p class="eyebrow">AI &amp; Automation Engineer · Chicago, IL</p>
+    <p class="eyebrow">AI Engineer · Chicago, IL</p>
     <h1>I build automation that takes repetitive work off people's desks.</h1>
-    <p class="lead">AI engineer with five years of experience building software, data pipelines, and automation. I'm currently building an AI automation system for an IT staffing and consulting firm that handles intake, document generation, immigration and work authorization deadlines, billing, and client communication, using Claude, Python, and API integrations.</p>
+    <p class="lead">AI Engineer with a master's in computer science and five years of experience building software, data pipelines, and automation. Currently building an AI automation system for an IT staffing and consulting firm that handles intake, document generation, immigration and work authorization deadlines, billing, and client communication, using Claude, Python, and API integrations. Experienced in working with confidential data such as passports, visa records, and SSNs, using encryption, access controls, and audit logging. Comfortable working directly with non-technical staff to learn how they work, then building, documenting, and training them on tools they can rely on.</p>
     <div class="cta">
-      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn primary" href="#experience">See my work</a>
       <a class="btn" href="mailto:abdalrehaman@yahoo.com">Email me</a>
       <a class="btn" href="https://github.com/Shaik-Abdullah963">GitHub</a>
     </div>
   </header>
 
-  <section id="projects">
-    <div class="wrap">
-      <h2>Projects</h2>
-
-      <article class="project featured">
-        <p class="meta">CorusSoft · 2025 to present</p>
-        <h3>AI Workflow Automation for an IT Staffing &amp; Consulting Firm</h3>
-        <p>A system used daily by recruiters, HR, and finance staff that replaced manual data entry, document prep, and
-          deadline tracking.</p>
-        <div class="flow">
-          <span>Intake</span><i>→</i><span>Claude extraction</span><i>→</i><span>Human
-            review</span><i>→</i><span>PostgreSQL</span><i>→</i><span>Documents, reminders, invoices</span>
-        </div>
-        <ul>
-          <li>Extracts data from resumes, passports, visa documents, and intake emails into structured records, with
-            low-confidence fields sent to a review queue</li>
-          <li>Tracks H-1B, OPT/STEM OPT, and other work authorization expirations, I-9 reverification, contract end
-            dates, and RFE response deadlines, with automated reminders</li>
-          <li>Prepares H-1B and extension document packets for review and filing by the firm's outside immigration
-            attorneys</li>
-          <li>Generates offer letters, C2C agreements, SOWs, and client submittals from templates</li>
-          <li>Connects the ATS, email, calendar, e-signature, and accounting tools through APIs and n8n</li>
-          <li>Automates timesheet collection, invoice prep, and routine client and consultant communication</li>
-          <li>Protects SSNs, passport and visa records with encryption, role-based access, audit logs, and PII redaction
-            before LLM calls</li>
-          <li>Internal dashboard, staff training sessions, and plain-language guides for every workflow</li>
-        </ul>
-        <div class="tags"><span>Python</span><span>FastAPI</span><span>Claude
-            API</span><span>PostgreSQL</span><span>n8n</span><span>React</span><span>Docker</span></div>
-      </article>
-
-      <article class="project">
-        <p class="meta">Portfolio project</p>
-        <h3>MediAssist AI: Retrieval-Augmented Q&amp;A over Healthcare Documents</h3>
-        <p>A RAG platform that answers questions grounded in a document collection, built as a full API service.</p>
-        <ul>
-          <li>Document ingestion, chunking, and embedding into a Milvus vector store</li>
-          <li>FastAPI service that retrieves relevant passages and generates cited answers with an LLM</li>
-          <li>PostgreSQL for metadata and query history, packaged with Docker</li>
-        </ul>
-        <div class="tags">
-          <span>LangChain</span><span>Milvus</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span>
-        </div>
-      </article>
-    </div>
-  </section>
-
   <section id="skills">
     <div class="wrap">
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="skills">
         <div class="skill"><h4>Programming</h4><p>Python, JavaScript, SQL, Bash</p></div>
         <div class="skill"><h4>AI &amp; LLMs</h4><p>Claude API, OpenAI API, LangChain, LangGraph, RAG pipelines, prompt engineering, document extraction, Transformers, PyTorch</p></div>
@@ -425,26 +381,93 @@
 
   <section id="experience">
     <div class="wrap">
-      <h2>Experience</h2>
-      <ul class="timeline">
-        <li><span class="when">Sep 2025 to now</span>
-          <div><b>AI Engineer Intern, CorusSoft</b>
-            <p>AI automation for an IT staffing and consulting firm: intake, immigration compliance, documents, billing, and client communication.</p>
-          </div>
-        </li>
+      <h2>Professional Experience</h2>
+
+      <article class="project featured job">
+        <p class="meta">Sept 2025 to Present</p>
+        <h3>AI Engineer Intern · CorusSoft</h3>
+        <div class="flow">
+          <span>Intake</span><i>→</i><span>Claude extraction</span><i>→</i><span>Human review</span><i>→</i><span>PostgreSQL</span><i>→</i><span>Documents, reminders, invoices</span>
+        </div>
+        <ul>
+          <li>Built an end-to-end automation system for an IT staffing and consulting firm covering consultant intake, immigration compliance, contracts, billing, and client communication, used daily by recruiters, HR, and finance staff</li>
+          <li>Automated consultant and client intake using Claude to extract data from resumes, passports, visa documents, and intake emails into structured PostgreSQL records, with low-confidence fields sent to a human review queue</li>
+          <li>Tracked H-1B, OPT/STEM OPT, and other work authorization expirations, I-9 reverification dates, and contract end dates, sending automated reminders to HR and account managers ahead of each deadline</li>
+          <li>Automated preparation of H-1B and extension document packets (LCA details, client letters, employment verification, supporting exhibits) and organized them for review and filing by the firm's outside immigration attorneys, including tracking RFE response deadlines</li>
+          <li>Generated offer letters, C2C agreements, SOWs, and client submittals from templates filled directly from case data, cutting out repeated manual entry across documents</li>
+          <li>Connected the ATS, email, calendar, e-signature, and accounting systems through APIs and n8n workflows so candidate, placement, and billing data stayed in sync across tools</li>
+          <li>Automated timesheet collection and invoice preparation for placed consultants, flagging missing or mismatched hours for finance review before billing</li>
+          <li>Automated client and consultant communication, including onboarding emails, document requests, status updates, and AI-drafted submittal summaries that recruiters approved before sending</li>
+          <li>Secured confidential data (SSNs, passport and visa records, pay rates) with encrypted storage, role-based access, audit logging, and redaction of PII before LLM calls where full details weren't needed</li>
+          <li>Built an internal dashboard for non-technical staff, ran training sessions, wrote plain-language guides for every workflow, and kept maintaining and extending the system as new requests came in from recruiting, HR, and finance</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>FastAPI</span><span>Claude API</span><span>PostgreSQL</span><span>n8n</span><span>React</span><span>Docker</span></div>
+      </article>
+
+      <article class="project job">
+        <p class="meta">Oct 2021 to Jan 2023</p>
+        <h3>Software Engineer · LTIMindtree</h3>
+        <ul>
+          <li>Spearheaded supervised and unsupervised learning workflows, utilizing advanced feature engineering to train predictive analytics models for retail application workloads</li>
+          <li>Engineered high-performance SQL data wrangling pipelines using Pandas and NumPy to clean, ingest, and process multi-terabyte transactional datasets while ensuring data integrity</li>
+          <li>Built and deployed Flask-based APIs to serve machine learning models, integrating CI/CD deployment principles onto cloud infrastructures to maintain strict SLAs</li>
+          <li>Guaranteed 99.9% availability for core development and staging servers by configuring, patching, and maintaining distributed Linux and Windows Server environments</li>
+          <li>Reduced infrastructure and application ticket resolution times by 35% by conducting root-cause analysis on system bugs and verifying network database connections</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Flask</span><span>CI/CD</span><span>Linux</span></div>
+      </article>
+
+      <article class="project job">
+        <p class="meta">May 2020 to Oct 2021</p>
+        <h3>Junior Software Engineer · FlashInfoLabs</h3>
+        <ul>
+          <li>Programmed production-grade Python pipelines to automate data cleaning, validation, and preprocessing operations, removing format bottlenecks for incoming unstructured datasets</li>
+          <li>Supported regression testbeds by engineering monitoring solutions in Python to track pipeline execution quality, model integrity, and system resource metrics</li>
+          <li>Assisted in debugging failed application processes and optimizing baseline workflows using Scikit-Learn and SQL to isolate performance anomalies in high-throughput environments</li>
+        </ul>
+        <div class="tags"><span>Python</span><span>SQL</span><span>Scikit-Learn</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+
+      <article class="project job">
+        <p class="meta">Capstone project · M.S. Computer Science, Governors State University</p>
+        <h3>MediAssist AI: RAG Platform for Healthcare Documents</h3>
+        <p>A retrieval-augmented generation platform that answers healthcare questions grounded in a document collection, built as a full API service.</p>
+        <ul>
+          <li>Built document ingestion, chunking, and embedding into a Milvus vector store</li>
+          <li>Developed a FastAPI service that retrieves relevant passages and generates answers with GPT-4 through LangChain</li>
+          <li>Used PostgreSQL for metadata and query history, and packaged the services with Docker</li>
+        </ul>
+        <div class="tags"><span>LangChain</span><span>GPT-4</span><span>Milvus</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
+      </article>
+
+      <article class="project job">
+        <p class="meta">Personal project · In progress</p>
+        <h3>Chiplet-Aware LLM Inference on AMD Instinct MI300X</h3>
+        <p>Porting AMD Research's "Fleet" work on chiplet-aware megakernel scheduling for LLM inference from the MI350 to the MI300X, and adapting it from Qwen3-8B to DeepSeek models.</p>
+        <ul>
+          <li>Adapting the megakernel scheduling approach to the MI300X chiplet layout, starting on a single GPU</li>
+          <li>Bringing up DeepSeek-Coder-V2-Lite-Base, a smaller mixture-of-experts model, before moving to larger DeepSeek models across multiple GPUs</li>
+          <li>Planning to layer further inference optimizations on top once the port is working</li>
+        </ul>
+        <div class="tags"><span>AMD MI300X</span><span>ROCm</span><span>LLM inference</span><span>Mixture of Experts</span><span>DeepSeek</span><span>Python</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <ul class="timeline edu">
         <li><span class="when">Aug 2023 to May 2025</span>
-          <div><b>M.S. Computer Science, Governors State University</b>
-            <p>GPA 3.46. Advanced Operating Systems, Scripting Languages, Big Data Analytics, Advanced Database Concepts, AI Fundamentals.</p>
-          </div>
-        </li>
-        <li><span class="when">Oct 2021 to Jan 2023</span>
-          <div><b>Software Engineer, LTIMindtree</b>
-            <p>Predictive analytics models, SQL and Pandas data pipelines over large transactional datasets, and Flask APIs serving ML models.</p>
-          </div>
-        </li>
-        <li><span class="when">May 2020 to Oct 2021</span>
-          <div><b>Junior Software Engineer, FlashInfoLabs</b>
-            <p>Python pipelines to automate data cleaning, validation, and preprocessing, plus monitoring for pipeline quality.</p>
+          <div><b>Master of Science in Computer Science</b>
+            <p>Governors State University, Chicago, IL</p>
+            <p style="color:var(--muted)">GPA 3.46 / 4.0. Coursework: Advanced Operating Systems, Scripting Languages, Big Data Analytics, Advanced Database Concepts, AI Fundamentals.</p>
           </div>
         </li>
       </ul>
@@ -454,8 +477,7 @@
   <section id="contact">
     <div class="wrap">
       <h2>Contact</h2>
-      <p style="color:var(--muted);margin-bottom:18px">Open to full-time AI and automation roles, including on-site and
-        relocation.</p>
+      <p style="color:var(--muted);margin-bottom:18px">Chicago, IL. Open to full-time AI and automation roles, including on-site and relocation.</p>
       <div class="contact">
         <a class="btn primary" href="mailto:abdalrehaman@yahoo.com">abdalrehaman@yahoo.com</a>
         <a class="btn" href="tel:+13124984754">+1 312 498 4754</a>
